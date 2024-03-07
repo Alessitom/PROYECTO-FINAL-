@@ -184,28 +184,28 @@ footer {
 
 /* Estilos para las cartas de la sección Torso */
 .pecho .flip-card-front {
-    background-image: url('/Images/torso.jpg');
+    background-image: url('/Images/Torso.jpg');
 }
 
 .espalda .flip-card-front {
-    background-image: url('/Images/torso.jpg');
+    background-image: url('/Images/Torso.jpg');
 }
 
 .abdominales .flip-card-front {
-    background-image: url('/Images/torso.jpg');
+    background-image: url('/Images/Torso.jpg');
 }
 
 /* Estilos para las cartas de la sección Brazos */
 .hombros .flip-card-front {
-    background-image: url('/Images/brazos.jpg');
+    background-image: url('/Images/Brazos.jpg');
 }
 
 .biceps .flip-card-front {
-    background-image: url('/Images/brazos.jpg');
+    background-image: url('/Images/Brazos.jpg');
 }
 
 .triceps .flip-card-front {
-    background-image: url('/Images/brazos.jpg');
+    background-image: url('/Images/Brazos.jpg');
 }
 
 /* Estilos para las cartas de la sección Pierna */
