@@ -1,3 +1,57 @@
+/* Estilos para dispositivos móviles y tablets */
+@media only screen and (max-width: 768px) {
+    /* Reducir el tamaño del título del encabezado */
+    header h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Reducir el tamaño del texto del menú de navegación */
+    nav ul li a {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Centrar las secciones */
+    .section-container {
+        margin: 0 auto; /* Centrar horizontalmente */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    /* Reducir el padding de las listas desplegables */
+    nav ul ul {
+        padding: 5px; /* Reducir el padding */
+    }
+
+    /* Reducir el tamaño del texto en las secciones */
+    .section-container h3 {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Reducir el tamaño de las cartas */
+    .flip-card {
+        width: 150px; /* Reducir el ancho */
+        height: 200px; /* Reducir el alto */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    /* Reducir el tamaño del texto del pie de página */
+    footer {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Reducir el tamaño del texto en los elementos del pie de página */
+    .footer-column h3 {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+        margin-bottom: 5px; /* Reducir el margen inferior */
+    }
+
+    /* Colocar las listas desplegables una encima de la otra */
+    nav ul ul {
+        top: 100%; /* Posicionar debajo del elemento padre */
+        left: 0; /* Alinear a la izquierda */
+    }
+}
+
+/* Estilos generales */
 body {
     background-image: url('/Images/Fondo\ de\ body.jpg');
     background-size: cover;
@@ -195,23 +249,6 @@ footer a {
     display: inline-block;
     color: black;
     margin-bottom: 10px; /* Reduce el espacio entre el título y el contenido */
-}
-
-.footer-column h3::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px; /* Mismo alto que la línea del nav */
-    background-color: black;
-    bottom: -2px; /* Ajusta la posición para que esté alineada */
-    left: 0;
-    transition: width 0.5s ease-in-out;
-}
-.footer-column h3 {
-    position: relative;
-    display: inline-block;
-    color: black;
-    margin-bottom: 10px; /* Reduce el espacio entre el título y el contenido */
     transition: transform 0.3s, font-size 0.3s; /* Agrega transición para el movimiento y el tamaño de la fuente */
 }
 
@@ -228,7 +265,6 @@ footer a {
     color: black;
     transition: transform 0.3s, font-size 0.3s; /* Agrega transición para el movimiento y el tamaño de la fuente */
 }
-
 
 
 
