@@ -61,7 +61,7 @@ nav ul li a::after {
     background-color: #fff;
     bottom: -2px;
     left: 0;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.5s ease-in-out;
 }
 
 nav ul li a:hover::after {
@@ -102,7 +102,8 @@ section {
     text-align: center;
 }
 
-.section-container, form {
+
+.section-container {
     flex: 1 0 100%;
     min-height: 500px;
     padding: 80px;
@@ -162,6 +163,9 @@ section {
 }
 
 footer {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos al inicio del eje horizontal */
+    align-items: flex-start; /* Alinea los elementos al inicio del eje vertical */
     background-image: url('/Images/Logoinverso.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,11 +173,71 @@ footer {
     color: #000;
     font-size: 1.5rem;
     text-align: left;
-    padding: 50px;
+    padding: 30px;
     bottom: 0;
     width: 100%;
     height: 100rem;
 }
+footer a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del texto del contenedor */
+}
+
+
+.footer-column {
+    transition: transform 0.3s ease;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-column h3 {
+    position: relative;
+    display: inline-block;
+    color: black;
+    margin-bottom: 10px; /* Reduce el espacio entre el título y el contenido */
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px; /* Mismo alto que la línea del nav */
+    background-color: black;
+    bottom: -2px; /* Ajusta la posición para que esté alineada */
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+.footer-column h3 {
+    position: relative;
+    display: inline-block;
+    color: black;
+    margin-bottom: 10px; /* Reduce el espacio entre el título y el contenido */
+    transition: transform 0.3s, font-size 0.3s; /* Agrega transición para el movimiento y el tamaño de la fuente */
+}
+
+ a:hover {
+    transform: translateX(10px); /* Mueve hacia la derecha */
+    font-size: larger; /* Aumenta el tamaño de la fuente */
+}
+
+.footer-column h3:hover::after {
+    width: 100%;
+}
+.footer-column  a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s, font-size 0.3s; /* Agrega transición para el movimiento y el tamaño de la fuente */
+}
+
+
+
+
+
+
+
+
+
+
 
 #CONOCENOS {
     background-image: url(/Images/fondo\ conocenos.gif);
