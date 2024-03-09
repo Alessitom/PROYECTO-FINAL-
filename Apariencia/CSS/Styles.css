@@ -32,24 +32,27 @@
         height: 200px; /* Reducir el alto */
         margin-bottom: 10px; /* Ajustar el margen inferior */
     }
-
+   
     /* Reducir el tamaño del texto del pie de página */
-    footer {
-        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    .footer-column a{
+        font-size: 0.9rem;
+        text-align: left;
     }
+   
+    
 
-    /* Reducir el tamaño del texto en los elementos del pie de página */
-    .footer-column h3 {
-        font-size: 1rem; /* Reducir el tamaño del texto */
-        margin-bottom: 5px; /* Reducir el margen inferior */
-    }
+   
 
     /* Colocar las listas desplegables una encima de la otra */
     nav ul ul {
         top: 100%; /* Posicionar debajo del elemento padre */
         left: 0; /* Alinear a la izquierda */
     }
+
+    /* Cambiar la disposición de las columnas del footer */
+    
 }
+
 
 /* Estilos generales */
 body {
