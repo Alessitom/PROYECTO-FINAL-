@@ -1,6 +1,6 @@
 /* Estilos para el cuerpo de la página */
 body {
-    background-image: url('/Images/Form.jpg'); /* Imagen de fondo */
+    background-image: url('/Apariencia/Images/Form.jpg'); /* Imagen de fondo */
     background-size: cover; /* Cubrir todo el área */
     background-repeat: no-repeat; /* No repetir la imagen */
     background-attachment: fixed; /* Fijar la imagen de fondo */
