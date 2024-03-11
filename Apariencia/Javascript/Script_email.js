@@ -14,8 +14,9 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
     var body = "Hola " + nombre + " " + apellidos + ",<br><br>Adjunto encontrarás el enlace a la rutina de gimnasio para principiantes que solicitaste: <a href='" + pdfLink + "'>" + pdfLink + "</a>";
 
     var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    
-    window.open(mailtoLink);
+ 
+
+    window.location.href = mailtoLink;
 
     alert("Se ha enviado el enlace al correo electrónico.");
 });
